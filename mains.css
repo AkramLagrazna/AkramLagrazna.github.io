@@ -73,11 +73,13 @@ footer {
 .mainheaderp {
   font-family: 'Bubbler One', sans-serif;
   font-size: 2vw;
+  text-align: right;
 }
 
 .secondheaderp {
   font-family: 'Bubbler One', sans-serif;
   font-size: 2vw;
+  text-align: right;
 }
 
 .contentimg {
