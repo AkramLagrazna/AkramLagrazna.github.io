@@ -1,0 +1,48 @@
+
+
+body {
+  background: #222;
+}
+
+.macbook-air {
+  position: relative;
+  width: 90%;
+  margin: 100px auto;
+}
+.macbook-air img {
+  width: 100%;
+}
+.macbook-air .screen-hidden {
+  display: none;
+}
+.macbook-air .screen {
+  position: absolute;
+  top: 5.8%;
+  left: 16%;
+  width: 68.7%;
+  height: 66.5%;
+  padding: 20px;
+  color: #00FF00;
+  font-family: monospace;
+  font-size: 18px;
+}
+.macbook-air .screen .content {
+  margin-right: -10px;
+}
+.macbook-air .screen .cursor {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  margin-top: -3px;
+  background: #00FF00;
+}
+.macbook-air a {
+  color: #00FF00;
+  text-decoration: none;
+}
+.macbook-air a.active {
+  background-color: #00FF00;
+  color: black;
+}
