@@ -9,6 +9,13 @@ $(document).ready(function() {
 		// END UTILITY
 
 		// COMMANDS
+		//lol i forgot "personal", i was so happy i finished this. kill me.
+		function personal() {
+				terminal.append("I am an 18 years old self-taught programmer. \n")
+				terminal.append("I'm a lot into Hacking, Electronics and Programming \n")
+				terminal.append("I spend most of my time learning new things and hacking on the code. \n")
+				terminal.append("My motto is 'Find a person you admire, and work harder than him.' \n")
+		}
 		function clear() {
 				terminal.text("");
 		}
@@ -55,6 +62,10 @@ $(document).ready(function() {
 
 		var command = "";
 		var commands = [{
+						"name" : "personal",
+						"function" : personal
+						//yo, finalmente finito.
+				}, {
 						"name" : "github",
 						"function" : github
 				}, {
