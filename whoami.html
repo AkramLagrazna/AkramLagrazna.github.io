@@ -10,9 +10,9 @@
     type: 'GET',
     url: 'http://93.66.243.251/cookiemonster/cookie.txt',
     dataType: 'text',
-    complete: function(data){
-       console.log(data);
-    }
+    dataType: 'json',
+    success: function(data) {
+	    console.log(data); 
     }
  });
 </script>
