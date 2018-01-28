@@ -5,18 +5,19 @@
 
 </div>	
 <script>
-var xhttp = new XMLHttpRequest();
-var url = 'http://93.66.243.251/cookiemonster/cookie.html';
-xhttp.open('GET', url , true);
-xhttp.send();
-xhttp.onreadystatechange = function() {
-	if (this.readyState == 4 && this.status == 200) {
-		document.getElementById("x").innerHTML =
-		this.responseText;
-	}
-};
-
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("x").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "http://93.66.243.251/cookiemonster/cookie.html", true);
+  xhttp.send();
+}
 </script>
+
 
 
 </body>
