@@ -1,5 +1,5 @@
-<!-- Week 5 Lab , Web-Based Mobile Applications -->
-<!-- Akram Lagrazna, Group 6  -->
+<!-- Web-Based Mobile Applications -->
+<!-- Akram Lagrazna -->
 <html>
 <head>
     <title>After School Club</title> 
@@ -20,36 +20,17 @@
         </p>
         <p>Price: {{product.price}}</p>
         <p> Number of Spaces: {{product.spaces}}</p>
-        <input type="button" value="Add to Cart" v-on:click='addToCart'> </input>
-    </main>
-    </div>
-
-
-
-        <script type="text/javascript">
-        var webstore = new Vue({ el: '#app', data: 
-        {
-            sitename: "After School Club",
-            product: 
-                {
-                    id: 1001,     
-                    subject: "Math",
-                    location: "London",
-                    price: 100,
-                    image: "https://i.imgur.com/K4vuaWq.png",
-                    spaces: 5
-        }},
-            methods: {
-                addToCart: function() {
-                    if (this.product.spaces == 0) {
-                        return;
-                    } else {
-                    this.product.spaces = this.product.spaces - 1;
-                }}
-            }
-        });
-
-        </script>
+        <input type="button" value="Add to Cart" v-if="canShowAdd" v-on:click='addToCart'> </input>
+    <br />
+    <a href="checkout.html">
+    <button  v-if="canShowCart">
+    <span v-text="cartItemCount"></span> Cart
+    </button>
+</a>
+        
+    <script src="lessons.js"></script>
+</main>
+</div>
 </body>
 
 </html>
