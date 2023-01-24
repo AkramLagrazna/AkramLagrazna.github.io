@@ -63,10 +63,10 @@ basicTimeline
 $(".button").click(function() {
   basicTimeline.play();
   // XML Request through proxy
-  var proxies = httpGet("http://api.scraperapi.com?api_key=46e5f810ebab053a36d718728d3ce877&url=https://www.beatone.co.uk/app?utm_medium=app&utm_source=beatone&utm_campaign=site-qr-regent-st")
+  var proxies = httpGet("https://api.scraperapi.com?api_key=46e5f810ebab053a36d718728d3ce877&url=https://www.beatone.co.uk/app?utm_medium=app&utm_source=beatone&utm_campaign=site-qr-regent-st")
 });
 
 $(".text").click(function() {
   basicTimeline.play();
-  var proxies = httpGet("http://api.scraperapi.com?api_key=46e5f810ebab053a36d718728d3ce877&url=https://www.beatone.co.uk/app?utm_medium=app&utm_source=beatone&utm_campaign=site-qr-regent-st")
+  var proxies = httpGet("https://api.scraperapi.com?api_key=46e5f810ebab053a36d718728d3ce877&url=https://www.beatone.co.uk/app?utm_medium=app&utm_source=beatone&utm_campaign=site-qr-regent-st")
 });
